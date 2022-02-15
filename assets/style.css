@@ -20,7 +20,6 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: #211a1d;
 }
 
 /* Utilities */
@@ -63,7 +62,6 @@ body {
 
 /* ! See issue #2 in the assignment */
 .hero h2 span {
-  color: #ee4266;
   font-weight: 600;
 }
 
@@ -79,7 +77,6 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
-  font-weight: 800;
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 }
 
@@ -90,7 +87,7 @@ body {
 }
 
 /* ! See issue #4 in the assignment */
-.primary {
+primary {
   text-decoration: none;
   color: white;
   background-color: #e6a714;
@@ -127,7 +124,6 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  padding: 40px;
   color: white;
   border: solid 1px #ee4266;
 }
@@ -142,7 +138,6 @@ body {
 .heading img {
   background: #ee4266;
   padding: 0.5rem;
-  border-radius: 50%;
   width: 100px;
   height: 100px;
   margin-right: 20px;
@@ -175,7 +170,6 @@ body {
   color: white;
 
   /* background image */
-  background-image: url("./4x400.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -192,7 +186,6 @@ body {
 .register {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
   place-items: start start;
   min-height: 400px;
   width: 60%;
@@ -211,7 +204,6 @@ body {
 .reg-info h3 {
   font-size: 2rem;
   font-weight: 400;
-  margin: 0;
 }
 
 .reg-info p {
@@ -246,7 +238,6 @@ form button {
   color: white;
   font-weight: 800;
   background-color: #e6a714;
-  border-radius: 5px;
   padding: 5px 30px;
   justify-self: end;
 }
