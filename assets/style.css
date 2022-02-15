@@ -1,0 +1,310 @@
+/* Typefaces imported from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;800;900&display=swap");
+
+/* Colors */
+/* Black: #211a1d */
+/* Gold: #E6A714 */
+/* Accent: #EE4266 */
+/* Black-faded: #211a1dc5 */
+
+/* HTML rules */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body styles */
+/* ! See issue #1 in the assignment */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #211a1d;
+}
+
+/* Utilities */
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styles for the hero landing */
+.hero {
+  /* Rules for the image background */
+  background-image: url("./Rediker.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+
+  /* Layout rules */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center center;
+  grid-gap: 20px;
+  color: white;
+}
+
+.hero h1 {
+  font-weight: 900;
+  /* hero clamp for font-size */
+  font-size: clamp(2.5rem, 3.5vw, 4.3rem);
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  margin-top: 0;
+  font-weight: 400;
+}
+
+/* ! See issue #2 in the assignment */
+.hero h2 span {
+  color: #ee4266;
+  font-weight: 600;
+}
+
+.info {
+  padding: 20px;
+  padding-bottom: 400px;
+  margin: 5vw;
+}
+
+/* Buttons */
+/* ! See issue #3 in the assignment */
+.buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: 800;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+
+.buttons img {
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* ! See issue #4 in the assignment */
+.primary {
+  text-decoration: none;
+  color: white;
+  background-color: #e6a714;
+  border-radius: 5px;
+  padding: 5px 30px;
+  margin-right: 30px;
+}
+
+.secondary {
+  text-decoration: none;
+  color: #e6a714;
+  border: solid 1px #e6a714;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+
+/* Running Programs */
+.programs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin: 5vw;
+  color: white;
+}
+
+.programs h2 {
+  font-size: 2rem;
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+/* ! See issue #5 in the assignment */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 40px;
+  color: white;
+  border: solid 1px #ee4266;
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+/* ! See issue #6 in the assignment */
+.heading img {
+  background: #ee4266;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.copy h3 {
+  color: #e6a714;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.copy h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ! See issue #7 in the assignment */
+.cta {
+  display: grid;
+  place-items: center center;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+
+  /* background image */
+  background-image: url("./4x400.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cta h2 {
+  font-size: clamp(2rem, 3.5vw, 4.3rem);
+  font-weight: 800;
+  align-self: start;
+  margin-top: 20vh;
+}
+
+/* ! See issue #8 in the assignment */
+.register {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  place-items: start start;
+  min-height: 400px;
+  width: 60%;
+  background: #211a1dc5;
+  border-radius: 5px;
+  margin: 5vw;
+  padding: 80px;
+}
+
+.reg-info {
+  border-right: solid 1px #e6a714;
+  padding-right: 20px;
+}
+
+/* ! See issue #9 in the assignment */
+.reg-info h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.reg-info p {
+  font-size: 0.8rem;
+}
+
+.stats {
+  display: flex;
+}
+
+.stats img {
+  margin-right: 10px;
+}
+
+.stats p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ! See issue #10 in the assignment */
+form button {
+  border: none;
+  margin-left: auto;
+  margin-right: 0 !important;
+  margin-top: 80px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  background-color: #e6a714;
+  border-radius: 5px;
+  padding: 5px 30px;
+  justify-self: end;
+}
+
+label {
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin: 0;
+}
+
+input,
+select {
+  background: #211a1d;
+  border: solid 0.5px #ee4266;
+  border-radius: 5px;
+  padding: 15px;
+  color: grey;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.pair {
+  display: flex;
+  margin-bottom: 10px;
+  justify-items: flex-start;
+}
+
+.pair :nth-child(1) {
+  margin-right: 60px;
+}
+
+.pair div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero,
+  .programs,
+  .register {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    flex-direction: column;
+  }
+
+  .heading h3 {
+    font-size: 2.5rem;
+  }
+
+  .pair {
+    flex-direction: column;
+  }
+
+  .reg-info {
+    border-right: solid 1px transparent;
+  }
+}
